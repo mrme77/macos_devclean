@@ -1,5 +1,7 @@
 # Devclean macOS Skill
 
+[![skills.sh](https://skills.sh/b/mrme77/macos_devclean)](https://skills.sh/mrme77/macos_devclean)
+
 Devclean macOS is an agent skill for previewing and cleaning macOS developer clutter: AI tool caches, package manager caches, Python and Jupyter artifacts, Xcode derived data, oversized logs, Chrome web storage, Trash, and rebuildable project artifacts.
 
 The skill is inspired by the Devclean maintenance workflow, but is packaged for agent use with stricter safety defaults. It bundles a deterministic Python cleanup helper so agents do not improvise filesystem deletion commands.
@@ -71,10 +73,10 @@ Deep mode only scans configured or common development roots. It is not intended 
 
 ## Install
 
-From a published GitHub repository:
+From GitHub:
 
 ```bash
-npx skills add <owner>/<repo> --skill devclean-macos -g
+npx skills add mrme77/macos_devclean --skill devclean-macos -g
 ```
 
 From a local checkout:
@@ -163,23 +165,20 @@ The skill is not intended to delete source code, credentials, settings, active v
 
 It only targets known cache, log, and rebuildable artifact patterns.
 
-## Publishing Notes
+## Discoverability
 
-For skills.sh discoverability, publish this repository publicly and install it through the `skills` CLI. skills.sh surfaces skills through the open skills ecosystem and install telemetry. Add the skills.sh badge after the final GitHub owner and repository are known:
+This skill is discoverable through the open skills ecosystem because it is hosted in a public GitHub repository with a valid `skills/devclean-macos/SKILL.md` file. Users can install it directly with:
 
-```markdown
-[![skills.sh](https://skills.sh/b/<owner>/<repo>)](https://skills.sh/<owner>/<repo>)
+```bash
+npx skills add mrme77/macos_devclean --skill devclean-macos -g
 ```
 
-Before publishing:
+The skills.sh leaderboard and install badge are driven by anonymous install telemetry from the `skills` CLI. The project page is:
 
-- Review `skills/devclean-macos/SKILL.md`.
-- Run a dry-run locally.
-- Run `python3 -m py_compile skills/devclean-macos/scripts/devclean.py`.
-- Review the script for filesystem safety.
-- Add a license file.
-- Replace placeholder install paths and badge owner/repo values.
+```text
+https://skills.sh/mrme77/macos_devclean
+```
 
 ## License
 
-Add a license before publishing. MIT is a practical default if you want broad reuse.
+MIT
