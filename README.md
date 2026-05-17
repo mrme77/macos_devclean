@@ -1,6 +1,6 @@
 # Devclean macOS Skill
 
-[![skills.sh](https://skills.sh/b/mrme77/macos_devclean)](https://skills.sh/mrme77/macos_devclean)
+[![skills.sh](https://skills.sh/b/mrme77/macos_devclean)](https://skills.sh/mrme77/macos_devclean/devclean-macos)
 
 Devclean macOS is an agent skill for previewing and cleaning macOS developer clutter: AI tool caches, package manager caches, Python and Jupyter artifacts, Xcode derived data, oversized logs, Chrome web storage, Trash, and rebuildable project artifacts.
 
@@ -176,7 +176,7 @@ npx skills add mrme77/macos_devclean --skill devclean-macos -g
 The skills.sh leaderboard and install badge are driven by anonymous install telemetry from the `skills` CLI. The project page is:
 
 ```text
-https://skills.sh/mrme77/macos_devclean
+https://skills.sh/mrme77/macos_devclean/devclean-macos
 ```
 
 ## License
