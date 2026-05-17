@@ -1,0 +1,6 @@
+interface:
+  display_name: "Devclean macOS"
+  short_description: "Preview and clean macOS developer caches"
+  default_prompt: "Use $devclean-macos to preview safe developer cache cleanup on this Mac."
+policy:
+  allow_implicit_invocation: true
